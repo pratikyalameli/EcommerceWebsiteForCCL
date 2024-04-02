@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---navbar--- -->
+    <nav class="navbar">
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link active">Home</a></li>
+            <li class="link-item"><a href="search.html" class="link">Product</a></li>
+            <li class="link-item"><a href="about.html" class="link">About</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="img/cart.png" onclick=window.open("cart.html") class="cart-icon" alt="">
+                <span class="cart-item-count">02</span>
+            </div>
+            <div class="user">
+                <img src="img/user.png" onclick=window.open("signup.html") class="user-icon">
+            </div>
+
+            <!-- <div class="menuicon">
+                <img src="img/icon.png" class="user-icon" alt="">
+            </div> -->
+        </div>
+    </nav>
+    <!-- ----<header>------ -->
+<header class="header-section">
+    <h1 class="header-heading">Being<span>BookNerd</span></h1>
+</header>
+
+      <!-- <-----best selling products-----> 
+ <section class="best-selling-product-section">
+            <h1 class="section-title">Best Selling Products</h1>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-card12">
+                        <img src="img/book1.jpg" onclick=window.open("product13.html") class="product-img" alt=""> 
+                        <img src="Fantasy/f12.jpg" onclick=window.open("product13.html")>
+                        <p class="product-name">The Part I Left With You</p>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-card12">
+                    <img src="img/book2.jpg" onclick=window.open("product14.html") class="product-img" alt="">
+                    <img src="Fantasy/f12.jpg" onclick=window.open("product14.html")>
+                    <p class="product-name">The Last Queen</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card12">
+                    <img src="img/book3.jpg" onclick=window.open("product15.html") class="product-img" alt="">
+                    <img src="Fantasy/f13.jpg" onclick=window.open("product15.html")>
+                    <p class="product-name">Circe</p>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-card12">
+                    <img src="img/book4.jpg" onclick=window.open("product16.html") class="product-img" alt="">
+                    <img src="Fantasy/f14.jpg" onclick=window.open("product16.html")>
+                    <p class="product-name">The Seven Husbands Of Evelyn Hugo</p>
+                    </div>
+                </div>
+
+
+  </section>
+
+        <!-- mid section -->
+  <section class="mid-section">
+   <div class="section-item-container">
+    <!-- <img src="img/bg2.png" class="section-img" alt=""> -->
+    <video muted="true" loop autoplay play-inline src="img/video.mp4" typle="video/mp4" class="section-img"></video>
+    <div class="section-info">
+        <h1 class="title">Read in every <span>genre</span> available</h1>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel excepturi fugiat aut tenetur odit harum quae placeat delectus minus.</p>
+    </div>
+   </div>
+  </section>
+
+  <!-- image collage -->
+  <section class="image-mid-section">
+    <div class="image-collage">
+        <div class="image-collection">
+            <!-- <img src="img/Collage/collage1.jpg" class="collage-img" alt=""> -->
+            <div class="product-card12">
+                <img src="img/book1.jpg" onclick=window.open("product13.html") class="collage-img">
+            </div>
+            <img src="img/Collage/collage2.jpg" onclick=window.open("product19.html") class="collage-img" alt="">
+            <img src="img/Collage/collage3.jpg" onclick=window.open("product18.html") class="collage-img" alt="">
+            <img src="img/Collage/collage4.jpg" onclick=window.open("product17.html") class="collage-img" alt="">
+            <!-- <img src="img/Collage/collage5.jpg" class="collage-img" alt=""> -->
+        </div>
+    </div>
+  </section>
+
+<!-- review section -->
+<section class="review-section">
+    <h1 class="review-section-title">What our <span> readers </span>say about us</h1>
+    <div class="review-container">
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"><img src="img/user1.jpg" alt=""></div>
+            <h2 class="review-title">I would definitely recommend this</h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"><img src="img/user2.jpg" alt=""></div>
+            <h2 class="review-title">Nice Work
+            </h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"><img src="img/user3.jpg" alt=""></div>
+            <h2 class="review-title">I love its customer support</h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+        </div>
+    </div>
+</section>
+ 
+<!-- end section -->
+<section class="end-section">
+    <div class="end-section-item-container">
+        <!-- <img src="img/bg2.png" class="section-img" alt=""> -->
+        <video muted="true" loop autoplay play-inline src="img/video3.mp4" typle="video/mp4" class="end-section-img"></video>
+        <div class="end-section-info">
+            <h1 class="end-title">Order Now to Experience every <span> World </span> Today</h1>
+            <p class="end-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel excepturi fugiat aut tenetur odit harum quae placeat delectus minus.</p>
+        </div>
+       </div>
+</section> 
+
+<footer>Made By Nerds</footer>
+
+<script src="JS/home.js"></script>
+</body>
+</html>
