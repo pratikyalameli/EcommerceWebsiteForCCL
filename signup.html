@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel',serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <!-- <script src="common.js"></script> -->
+</head>
+<body>
+    <!-- ---navbar--- -->
+    <nav class="navbar">
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link active">Home</a></li>
+            <li class="link-item"><a href="search.html" class="link">Product</a></li>
+            <li class="link-item"><a href="about.html" class="link">About</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="img/cart.png" onclick=window.open("cart.html") class="cart-icon" alt="">
+                <span class="cart-item-count">00</span>
+            </div>
+            <div class="user">
+                <img src="img/user.png" onclick=window.open("signup.html") class="user-icon">
+            </div>
+        </div>
+    </nav>
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form">
+                <h1 class="form-heading">New Here? Sign Up, Nerd!</h1>
+                <input type="text" autocomplete="off" id="name" placeholder="full name">
+                <input type="email" autocomplete="off" id="email" placeholder="email">
+                <input type="password" autocomplete="off" id="password" placeholder="password">
+                <input type="number" autocomplete="off" id="number" placeholder="number">
+                <span class="error">**This doesn't look nerdy, reader</span>
+                <div>
+                    <input type="checkbox" id="tc"><label for="tc">You have agreed to our <a href="#">Terms and Conditions
+                    </a></label>
+                </div>
+
+                <button class="submit-btn">Sign Up</button>
+                <a href="login.html" class="other-form-link">Already signed in</a>
+            </div>
+         <img src="img/ladder.jpg" class="form-img" alt="">
+        </div>
+    </section>
+
+    <script>
+    let formBtn=document.querySelector('.submit-btn');
+
+    formBtn.addEventListener('click', ()=>{
+        let fullname=document.querySelector('#name');
+        let email=document.querySelector('#email');
+        let password=document.querySelector('#password');
+        let number=document.querySelector('#number');
+        let tac=document.querySelector('#tc');
+
+        //form validation
+        if(fullname.value.length < 3){
+            alert('name must be 3 letters long');
+        }else if(!email.value.length){
+            alert('Enter your email');
+        }else if(password.value.length<8){
+            alert('Password must be 8 characters long');
+        }else if(Number(number)|| number.value.length<10){
+            alert('Invalid Number, Please enter valid number');
+        }
+    })
+    </script>
+</body>
+</html>

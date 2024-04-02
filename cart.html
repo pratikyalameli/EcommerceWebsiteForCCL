@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+      <!-- ---navbar--- -->
+      <nav class="navbar">
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link active">Home</a></li>
+            <li class="link-item"><a href="search.html" class="link">Product</a></li>
+            <li class="link-item"><a href="about.html" class="link">About</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="img/cart.png" onclick=window.open("cart.html") class="cart-icon" alt="">
+                <span class="cart-item-count">02</span>
+            </div>
+            <div class="user">
+                <img src="img/user.png" onclick=window.open("signup.html") class="user-icon">
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-section">
+        <div class="product-list">
+            <p class="section-heading">
+                Your Cart
+            </p>
+            <div class="cart-container">
+                <div class="sm-product">
+                    <img src="img/book3.jpg" class="sm-product" alt="">
+                    <div class="sm-text">
+                        <p class="sm-product-name">Circe</p>
+                        <p class="sm-des">Description</p>
+                    </div>
+                    <div class="item-counter">
+                        <button class="counter-btn decrement">-</button>
+                        <p class="item-count">1</p>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+                    <p class="sm-price">Rs 449</p>
+                    <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <div class="sm-product">
+                    <img src="img/book4.jpg" class="sm-product" alt="">
+                    <div class="sm-text">
+                        <p class="sm-product-name">Seven Husbands Of Evelyn Hugo</p>
+                        <p class="sm-des">Description</p>
+                    </div>
+                    <div class="item-counter">
+                        <button class="counter-btn decrement">-</button>
+                        <p class="item-count">1</p>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+                    <p class="sm-price">Rs 499</p>
+                    <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-section">
+            <div class="checkout-box">
+                <p class="text">your total bill,</p>
+                <h1 class="bill">Rs 948</h1>
+                <a href="/checkout" class="checkout-btn">checkout</a>
+            </div>
+        </div>
+        </div>
+    </div>
+     
+</body>
+</html>

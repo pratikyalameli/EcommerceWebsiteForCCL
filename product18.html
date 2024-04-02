@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBN-Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>  
+<style>
+.product-section{
+    width: 100%;
+    margin-top: 120px;
+    padding: 0px 5vw;
+    display: flex;
+    gap: 40px;
+}
+.product-image{
+    object-fit: cover;
+    /* width: 18.5%; */
+    width: 20rem;
+}
+.product-title{
+    font-size: 64px;
+}
+
+.product-des{
+   margin: 48px 0;
+   margin-top: 35px;
+   /* font-family:'Times New Roman', Times, serif; */
+   font-family: 'Cinzel', sans-serif;
+   font-size: 23px;
+   font-weight: bolder;
+   /* opacity: 0.5; */
+}
+.ratings{
+    display: flex;
+}
+.ratings .star{
+    width: 35px;
+    height: 35px;
+}
+
+.rating-count{
+    font-family:'Times New Roman', Times, serif;
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.price{
+    font-size: 50px;
+    margin: 36px 0;
+}
+
+.product-buy-btn{
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: white;
+    font-family: inherit;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: black;
+}
+
+.product-buy-btn:hover{
+    /* padding: 9px 20px; */
+    background-color: white;
+    color: black;
+    transition: ease-out;
+    transition: 0.5;
+    /* color: white; */
+}
+.product-cart-btn{
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: white;
+    font-family: inherit;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: black;
+}
+
+.product-cart-btn:hover{
+background-color: white;
+color: black;
+transition: 0.5;
+transition: ease-in;
+}
+
+.detail-des, .review-section{
+    width: 100%;
+    padding: 100px 5vw 0;
+}
+
+.des{
+    padding-top: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 1;
+}
+.addreview{
+    width: 100%;
+    padding: 100px 5vw 0;
+}
+.review-headline, .review-field{
+    width: 100%;
+    height: 40px;
+    border: 2px solid grey;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 40px;
+    color: black;
+    font-family: inherit;
+    outline: none;
+}
+::placeholder{
+    color: #c9c9c9;
+
+}
+
+.review-field{
+    height: 160px;
+    resize: none;
+    padding: 0 10px;
+}
+
+.review-headline:focus,
+.review-field:focus{
+    border-color: goldenrod;
+}
+
+.review-headline::placeholder
+.review-field::placeholder{
+    border-color: goldenrod;
+}
+
+.rating-text{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /* text-transform: uppercase; */
+    margin: 10px 0;
+}
+
+.rating-star{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.add-review-btn{
+    display: flex;
+    border: none;
+    outline: none;
+    background: #d5be8b;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    cursor: pointer;
+}
+</style>
+<body>
+      <!-- ---navbar--- -->
+      <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link">Home</a></li>
+            <li class="link-item"><a href="search.html" class="link active">Product
+
+            </a></li>
+            <li class="link-item"><a href="about.html" class="link">About</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="img/cart.png" class="cart-icon" alt="">
+                <span class="cart-item-count">00</span>
+            </div>
+            <div class="user">
+                <img src="img/user.png" class="user-icon">
+            </div>
+        </div>
+    </nav>
+    
+    <!-- prdouct-detail -->
+    <section class="product-section">
+        <img src="Fantasy/f18.jpg" class="product-image"alt="">
+        <div class="product-detail">
+            <h1 class="product-title">Legend of Suheldev: The King Who Saved India
+            </h1>
+            <p class="product-des"> Historical Fiction from Amish Tripathi
+            </p>
+            <div class="ratings">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/no fill star.png" class="star" alt="">
+                <span class="rating-counts">4090 reviews</span>
+            </div>
+            <p class="price">299 Rs</p>
+            <div class="btn-container">
+                <button class="product-buy-btn"> Buy Now
+                </button>
+                <button class="product-cart-btn"> Add to Cart
+                </button>
+                <button type="submit" onclick="window.open('books/book1.pdf')" class="product-cart-btn">Read First 10 Pages</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-des">
+        <h1 class="sectiontitle">Details</h1>
+        <p class="des">Suhaldev or Suheldev was a legendary king from Shravasti, popularly known to have defeated and killed the Ghaznavid general Ghazi Miyan at Bahraich in 1034 CE. Suhaldev. Maharaja of Shravasti. Suhaldev on a 2018 stamp. Religion.
+        </p>
+    </section>
+
+
+    <section class="review-section">
+        <h1 class="review-section-title">Reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.0"><img src="img/user1.jpg" alt=""></div>
+                <h2 class="review-title">Powerful!</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.5"><img src="img/user2.jpg" alt=""></div>
+                <h2 class="review-title">Crowned Head
+                </h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user3.jpg" alt=""></div>
+                <h2 class="review-title">Supreme Brawl! </h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section -->
+    <section class="addreview">
+        <h1 class="addreviewsection">Add A Review</h1>
+        <input type="text" class="review-headline" placeholder="review-headline">
+        <textarea placeholder="review" class="review-field"></textarea>
+        <p class="rating-text">How Much You Liked this Book? Give us an idea too!</p>
+        <div class="star-container">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" 
+        </div>
+        <button class="add-review-btn">Add Review</button>
+    </section>
+     
+    <section class="best-selling-product-section">
+        <h1 class="section-title">Similar Products</h1>
+        <div class="product-container">
+            <div class="product-card">
+                 <img src="img/book1.jpg" class="product-img" alt="">
+                 <p class="product-name">The Part I Left With You</p>
+            </div>
+            <div class="product-card">
+                 <img src="img/book2.jpg" class="product-img" alt="">
+                 <p class="product-name">The Last Queen</p>
+            </div>
+            <div class="product-card">
+                 <img src="img/book3.jpg" class="product-img" alt="">
+                 <p class="product-name">Circe</p>
+            </div>
+            <div class="product-card">
+                 <img src="img/book4.jpg" class="product-img" alt="">
+                 <p class="product-name">The Seven Husbands of Evelyn Hugo</p>
+            </div>
+        </div>
+</section>
+ 
+<footer>Made By Nerds</footer>
+<script src="product.js"></script>
+</body>
+</html>

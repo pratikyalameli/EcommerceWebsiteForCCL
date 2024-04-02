@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- ---navbar--- -->
+    <nav class="navbar">
+      <ul class="links-container">
+          <li class="link-item"><a href="index.html" class="link active">Home</a></li>
+          <li class="link-item"><a href="search.html" class="link">Product</a></li>
+          <li class="link-item"><a href="about.html" class="link">About</a></li>
+          <li class="link-item"><a href="contact.html" class="link active">Contact</a></li>
+      </ul>
+      <div class="user-interactions">
+          <div class="cart">
+              <img src="img/cart.png" onclick=window.open("cart.html") class="cart-icon" alt="">
+              <span class="cart-item-count">02</span>
+          </div>
+          <div class="user">
+              <img src="img/user.png" onclick=window.open("signup.html") class="user-icon">
+          </div>
+      </div>
+  </nav>
+
+<div class="contact-section">
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name">
+    <input type="email" class="contact-form-text" placeholder="Your email">
+    <input type="text" class="contact-form-text" placeholder="Your phone">
+    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+  </body>
+</html>

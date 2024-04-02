@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
+
+    html{
+        font-size: 10px;
+    }
+    body{
+        background: black;
+        text-align: center;
+    }
+    .aboutme-container{
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 3rem;
+        margin-top: 4rem;
+        text-align: center;
+    }
+    h1{
+        color: white;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-top: 10rem;
+        font-family: 'Cinzel', serif;
+        text-align: center;
+        justify-content: center;
+    }
+    h1 span{
+        color: wheat;
+    }
+    .logo{
+        height: 25rem;
+        width: 25rem;
+        outline: none;
+        justify-content: center;
+        margin-top: 35px;
+        
+        /* display: block; */
+    }
+
+    p{
+    color: white;
+    margin: 37px 2px 33px 0px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 21px 259px;
+    font-family: 'Cinzel', serif;
+}
+.aboutme-btn{   
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: black;
+    font-family: 'Cinzel',serif;
+    /* margin-right: 10px; */
+    font-size: 22px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: wheat;
+    display: inline-block;
+}
+
+.aboutme-btn:hover{
+    /* padding: 9px 20px; */
+    background-color: white;
+    color: black;
+    transition: ease-out;
+    transition: 0.5;
+    /* color: white; */
+}
+
+</style>
+<body>
+        <!-- ---navbar--- -->
+        <nav class="navbar bg">
+            <ul class="links-container">
+                <li class="link-item"><a href="index.html" class="link">Home</a></li>
+                <li class="link-item"><a href="search.html" class="link">Product</a></li>
+                <li class="link-item"><a href="about.html" class="link active">About</a></li>
+                <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+            <div class="user-interactions">
+                <div class="cart">
+                    <img src="img/cart.png" onclick=window.open("cart.html") class="cart-icon" alt="">
+                    <span class="cart-item-count">02</span>
+                </div>
+                <div class="user">
+                    <img src="img/user.png" onclick=window.open("signup.html") class="user-icon">
+                </div>
+            </div>
+        </nav>
+    
+    <div class="aboutme-container">
+        <h1>BeingBook<span>Nerd</span></h1>
+        <div>
+            <img src="img/logo3.png" onclick=window.open('index.html') class="logo" alt="logo">
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque corporis officiis repellat fuga totam nihil soluta? Facere magni nemo, sint voluptas sapiente eveniet laudantium earum voluptatem recusandae maiores vitae quo in minima harum eligendi. Pariatur nihil atque molestias reprehenderit molestiae nulla, animi et laboriosam consequatur? Asperiores exercitationem unde aliquid.
+    </p>
+    <button class="aboutme-btn" onclick=window.open('contact.html')>Contact Us</button>
+</body>
+</html>

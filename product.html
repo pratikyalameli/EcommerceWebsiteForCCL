@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBN-Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- font-fmily: 'Cinzel', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+      <!-- ---navbar--- -->
+      <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link">Home</a></li>
+            <li class="link-item"><a href="search.html" class="link active">Product
+
+            </a></li>
+            <li class="link-item"><a href="about.html" class="link">About</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="img/cart.png" onclick=window.open("cart.html") class="cart-icon" alt="">
+                <span class="cart-item-count">02</span>
+            </div>
+            <div class="user">
+                <img src="img/user.png" onclick=window.open("signup.html") class="user-icon">
+            </div>
+        </div>
+    </nav>
+    
+    <!-- prdouct-detail -->
+    <section class="product-section">
+        <img src="Fantasy/f9.jpg" class="product-image"alt="">
+        <div class="product-detail">
+            <h1 class="product-title">You Have Reached Sam</h1>
+            <p class="product-des"> A Fiction/Romance From Dustin Thao
+            </p>
+            <div class="ratings">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/no fill star.png" class="star" alt="">
+                <span class="rating-counts">6304 reviews</span>
+            </div>
+            <p class="price">437 Rs</p>
+            <div class="btn-container">
+                <button class="product-buy-btn"> Buy Now
+                </button>
+                <button class="product-cart-btn"> Add to Cart
+                </button>
+                <!-- <button class="product-buy-btn" <a href="book9.pdf">Download</a> -->
+                    <button type="submit" onclick="window.open('books/book9.pdf')" class="product-cart-btn">Read First 10 Pages</button>
+                    </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-des">
+        <h1 class="sectiontitle">Details</h1>
+        <p class="des">Seventeen-year-old Julie has her future all planned out—move out of her small town with her boyfriend Sam, attend college in the city, spend a summer in Japan. But then Sam dies. And everything changes.
+            Heartbroken, Julie skips his funeral, throws out his things, and tries everything to forget him and the tragic way he died. But a message Sam left behind in her yearbook forces back memories. Desperate to hear his voice one more time, Julie calls Sam’s cellphone just to listen to his voicemail.
+            And Sam picks up the phone.
+            In a miraculous turn of events, Julie’s been given a second chance at goodbye. The connection is temporary. But hearing Sam’s voice makes her fall for him all over again, and with each call it becomes harder to let him go. However, keeping her otherworldly calls with Sam a secret isn’t easy, especially when Julie witnesses the suffering Sam’s family is going through. Unable to stand by the sidelines and watch their shared loved ones in pain, Julie is torn between spilling the truth about her calls with Sam and risking their connection and losing him forever</p>
+    </section>
+
+
+    <section class="review-section">
+        <h1 class="review-section-title">Reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user1.jpg" alt=""></div>
+                <h2 class="review-title">Great book!</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user2.jpg" alt=""></div>
+                <h2 class="review-title">Pulled all my hearstrings out
+                </h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user3.jpg" alt=""></div>
+                <h2 class="review-title">I hate the ending</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis odio id, dolores magni aspernatur quos cum illo dolorum natus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section -->
+    <section class="addreview">
+        <h1 class="addreviewsection">Add A Review</h1>
+        <input type="text" class="review-headline" placeholder="review-headline">
+        <textarea placeholder="review" class="review-field"></textarea>
+        <p class="rating-text">How Much You Liked this Book? Give us an idea too!</p>
+        <div class="star-container">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" alt="">
+                <img src="img/no fill star.png" class="rating-star" 
+        </div>
+        <button class="add-review-btn">Add Review</button>
+    </section>
+     
+    <section class="best-selling-product-section">
+        <h1 class="section-title">Similar Products</h1>
+        <div class="product-container">
+            <div class="product-card">
+                 <img src="img/book1.jpg" class="product-img" alt="">
+                 <p class="product-name">The Part I Left With You</p>
+            </div>
+            <div class="product-card">
+                 <img src="img/book2.jpg" class="product-img" alt="">
+                 <p class="product-name">The Last Queen</p>
+            </div>
+            <div class="product-card">
+                 <img src="img/book3.jpg" class="product-img" alt="">
+                 <p class="product-name">Circe</p>
+            </div>
+            <div class="product-card">
+                 <img src="img/book4.jpg" class="product-img" alt="">
+                 <p class="product-name">The Seven Husbands of Evelyn Hugo</p>
+            </div>
+        </div>
+</section>
+ 
+<footer>Made By Nerds</footer>
+<script src="product.js"></script>
+</body>
+</html>
